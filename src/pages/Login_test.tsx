@@ -1,9 +1,11 @@
-import { FormEvent, useState } from "react";
+import { FormEvent, useCallback, useState } from "react";
 import "../styles/App.css";
+import { useNavigate } from "react-router-dom";
 
 function Login_test() {
   const [myAccount, setMyAccount] = useState("");
   const [myPassword, setMyPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -21,11 +23,16 @@ function Login_test() {
       headers: {
         "Content-Type": "application/json",
       },
-    })
-    const r = await res.json()
-    console.log(r)
+    });
+    const r = await res.json();
+    console.log("r:", r);
+    if (r.success) {
+      alert("登入成功~");
+      navigate("/");
+    } else {
+      alert(r.message)
+    }
   };
-
 
   return (
     <div className="container login">
