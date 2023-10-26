@@ -5,6 +5,9 @@
 // import Main_test from "./pages/Main_test";
 // import { UserProvider } from "./components/context/User_context";
 
+// import CheckedBox from "./pages/CheckedBox";
+import IanTree from "./pages/IanTree";
+
 function App() {
   //登入登出
   // const router = createBrowserRouter([
@@ -30,12 +33,15 @@ function App() {
 
   return (
     <>
+      <div className="container">
+        <IanTree />
+        {/* <CheckedBox /> */}
+      </div>
       {/* <UserProvider>
         <div className="container">
           <RouterProvider router={router} />
         </div>
       </UserProvider> */}
-
     </>
   );
 }
