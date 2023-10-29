@@ -5,8 +5,10 @@
 // import Main_test from "./pages/Main_test";
 // import { UserProvider } from "./components/context/User_context";
 
+import IanTree from "./pages/Checkbox_Tree/IanTree";
+import regData from "./data/reg.json"
 // import CheckedBox from "./pages/CheckedBox";
-import IanTree from "./pages/IanTree";
+
 
 function App() {
   //登入登出
@@ -31,10 +33,11 @@ function App() {
   //   },
   // ]);
 
+
   return (
     <>
       <div className="container">
-        <IanTree />
+        <IanTree regData={regData}/>
         {/* <CheckedBox /> */}
       </div>
       {/* <UserProvider>
