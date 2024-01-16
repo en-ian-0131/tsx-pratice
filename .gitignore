@@ -8,6 +8,10 @@
 # testing
 /coverage
 
+#npm
+.env.develop
+.env.production
+
 # production
 /build
 

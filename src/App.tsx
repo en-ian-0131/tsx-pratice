@@ -5,8 +5,8 @@
 // import Main_test from "./pages/Main_test";
 // import { UserProvider } from "./components/context/User_context";
 
-import IanTree from "./pages/Checkbox_Tree/IanTree";
-import regData from "./data/reg.json"
+// import IanTree from "./pages/Checkbox_Tree/IanTree";
+// import regData from "./data/reg.json"
 // import CheckedBox from "./pages/CheckedBox";
 
 
@@ -37,7 +37,7 @@ function App() {
   return (
     <>
       <div className="container">
-        <IanTree regData={regData}/>
+        {/* <IanTree regData={regData}/> */}
         {/* <CheckedBox /> */}
       </div>
       {/* <UserProvider>
